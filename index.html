@@ -1,21 +1,424 @@
- <h3>Дизайн-пак</h3>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUMBER STORE</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #111a32;
+  text-align: center;
+  padding: 30px;
+}
+h1 { color: #55aaff; }
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+}
+h2 { text-align: center; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #17213b;
+  border: 1px solid #293858;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+.emoji { font-size: 45px; }
+.price {
+  color: #62b4ff;
+  font-size: 22px;
+  margin: 20px;
+}
+button {
+  background: #2788ee;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8794b2;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>NUMBER STORE</h1>
+  <p>Магазин цифровых товаров</p>
+</header>
+<main>
+  <h2>🛍 Наш каталог</h2>
+  <div class="products">
+    <div class="card">
+      <div class="emoji">🎨</div>
+      <h3>Набор иконок</h3>
+      <p>Красивые иконки для устройства.</p>
+      <div class="price">50 ⭐</div>
+      <button onclick="order('Набор иконок')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🌌</div>
+      <h3>Обои</h3>
+      <p>Коллекция цифровых обоев.</p>
+      <div class="price">30 ⭐</div>
+      <button onclick="order('Обои')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">📦</div>
+      <h3>Шаблоны</h3>
+      <p>Полезные цифровые шаблоны.</p>
+      <div class="price">70 ⭐</div>
+      <button onclick="order('Шаблоны')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Дизайн-пак</h3>
       <p>Набор цифровых элементов.</p>
       <div class="price">90 ⭐</div>
       <button onclick="order('Дизайн-пак')">Выбрать</button>
     </div>
-
   </div>
 </main>
-
-<footer>
-  © 2026 NUMBER STORE
-</footer>
-
+<footer>© 2026 NUMBER STORE</footer>
 <script>
 function order(name) {
   alert("Ты выбрал: " + name + ". Это демонстрационный заказ.");
 }
 </script>
+</body>
+</html>
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUMBER STORE</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #111a32;
+  text-align: center;
+  padding: 30px;
+}
+h1 { color: #55aaff; }
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+}
+h2 { text-align: center; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #17213b;
+  border: 1px solid #293858;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+.emoji { font-size: 45px; }
+.price {
+  color: #62b4ff;
+  font-size: 22px;
+  margin: 20px;
+}
+button {
+  background: #2788ee;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8794b2;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>NUMBER STORE</h1>
+  <p>Магазин цифровых товаров</p>
+</header>
+<main>
+  <h2>🛍 Наш каталог</h2>
+  <div class="products">
+    <div class="card">
+      <div class="emoji">🎨</div>
+      <h3>Набор иконок</h3>
+      <p>Красивые иконки для устройства.</p>
+      <div class="price">50 ⭐</div>
+      <button onclick="order('Набор иконок')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🌌</div>
+      <h3>Обои</h3>
+      <p>Коллекция цифровых обоев.</p>
+      <div class="price">30 ⭐</div>
+      <button onclick="order('Обои')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">📦</div>
+      <h3>Шаблоны</h3>
+      <p>Полезные цифровые шаблоны.</p>
+      <div class="price">70 ⭐</div>
+      <button onclick="order('Шаблоны')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Дизайн-пак</h3>
+      <p>Набор цифровых элементов.</p>
+      <div class="price">90 ⭐</div>
+      <button onclick="order('Дизайн-пак')">Выбрать</button>
+    </div>
+  </div>
+</main>
+<footer>© 2026 NUMBER STORE</footer>
+<script>
+function order(name) {
+  alert("Ты выбрал: " + name + ". Это демонстрационный заказ.");
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUMBER STORE</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #111a32;
+  text-align: center;
+  padding: 30px;
+}
+h1 { color: #55aaff; }
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+}
+h2 { text-align: center; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #17213b;
+  border: 1px solid #293858;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+.emoji { font-size: 45px; }
+.price {
+  color: #62b4ff;
+  font-size: 22px;
+  margin: 20px;
+}
+button {
+  background: #2788ee;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8794b2;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>NUMBER STORE</h1>
+  <p>Магазин цифровых товаров</p>
+</header>
+<main>
+  <h2>🛍 Наш каталог</h2>
+  <div class="products">
+    <div class="card">
+      <div class="emoji">🎨</div>
+      <h3>Набор иконок</h3>
+      <p>Красивые иконки для устройства.</p>
+      <div class="price">50 ⭐</div>
+      <button onclick="order('Набор иконок')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🌌</div>
+      <h3>Обои</h3>
+      <p>Коллекция цифровых обоев.</p>
+      <div class="price">30 ⭐</div>
+      <button onclick="order('Обои')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">📦</div>
+      <h3>Шаблоны</h3>
+      <p>Полезные цифровые шаблоны.</p>
+      <div class="price">70 ⭐</div>
+      <button onclick="order('Шаблоны')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Дизайн-пак</h3>
+      <p>Набор цифровых элементов.</p>
+      <div class="price">90 ⭐</div>
+      <button onclick="order('Дизайн-пак')">Выбрать</button>
+    </div>
+  </div>
+</main>
+<footer>© 2026 NUMBER STORE</footer>
+<script>
+function order(name) {
+  alert("Ты выбрал: " + name + ". Это демонстрационный заказ.");
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUMBER STORE</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b1020;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #111a32;
+  text-align: center;
+  padding: 30px;
+}
+h1 { color: #55aaff; }
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+}
+h2 { text-align: center; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #17213b;
+  border: 1px solid #293858;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+.emoji { font-size: 45px; }
+.price {
+  color: #62b4ff;
+  font-size: 22px;
+  margin: 20px;
+}
+button {
+  background: #2788ee;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8794b2;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>NUMBER STORE</h1>
+  <p>Магазин цифровых товаров</p>
+</header>
+<main>
+  <h2>🛍 Наш каталог</h2>
+  <div class="products">
+    <div class="card">
+      <div class="emoji">🎨</div>
+      <h3>Набор иконок</h3>
+      <p>Красивые иконки для устройства.</p>
+      <div class="price">50 ⭐</div>
+      <button onclick="order('Набор иконок')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🌌</div>
+      <h3>Обои</h3>
+      <p>Коллекция цифровых обоев.</p>
+      <div class="price">30 ⭐</div>
+      <button onclick="order('Обои')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">📦</div>
+      <h3>Шаблоны</h3>
+      <p>Полезные цифровые шаблоны.</p>
+      <div class="price">70 ⭐</div>
+      <button onclick="order('Шаблоны')">Выбрать</button>
+    </div>
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Дизайн-пак</h3>
+      <p>Набор цифровых элементов.</p>
+      <div class="price">90 ⭐</div>
+      <button onclick="order('Дизайн-пак')">Выбрать</button>
+    </div>
+  </div>
+</main>
+<footer>© 2026 NUMBER STORE</footer>
+<script>
+function order(name) {
+  alert("Ты выбрал: " + name + ". Это демонстрационный заказ.");
+}
+</script>
 </body>
 </html>
